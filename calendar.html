@@ -92,79 +92,109 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <h1 id="welcome-to-our-calendar">Welcome to Our Calendar</h1>
-<p>Please input a list of activities you would like to do into the text box</p>
-
-<div>
-
+<p>&lt;!DOCTYPE html&gt;</p>
 <html>
-    <table>
-        <tr>
-            <th>Day</th>
-            <th>Sunday</th>
-            <th>Monday</th>
-            <th>Tuesday</th>
-            <th>Wednesday</th>
-            <th>Thursday</th>
-            <th>Friday</th>
-            <th>Saturday</th>
-        </tr>
-        <tr>
-            <td>A</td>
-            <td>B</td>
-            <td>C</td>
-            <td>D</td>
-            <td>E</td>
-            <td>F</td>
-            <td>G</td>
-            <td>23</td>
-        </tr>
-        <tr>
-            <tr>1</tr>
-            <tr>2</tr>
-            <tr>3</tr>
-            <tr>4</tr>
-            <tr>5</tr>
-            <tr>6</tr>
-            <tr>7</tr>
-            <tr>8</tr>
-            <tr>9</tr>
-        </tr>
-    </table>
+<title>Online HTML Editor</title>
+<head>
+    
+<style>
+    table, th, td {
+      border: 1px solid lightblue;
+      border-collapse: collapse;
+    }
+    table {
+        width: 70vw;
+        height: 70vh;
+    }
+</style>
+    
+</head>
+<body>
+
+<h1 style="text-align: center" id="month">October</h1>
+
+<table style="text-align: center">
+    <tr>
+        <th>Sunday</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+    </tr>
+    
+    <tr>
+        <td id="1"></td>
+        <td id="2"></td>
+        <td id="3"></td>
+        <td id="4"></td>
+        <td id="5"></td>
+        <td id="6"></td>
+        <td id="7">1</td>
+    </tr>
+    
+    <tr>
+        <td id="1">1</td>
+        <td id="1">1</td>
+        <td id="1">1</td>
+        <td id="1">1</td>
+        <td id="1">1</td>
+        <td id="1">1</td>
+        <td id="1">1</td>
+    </tr>
+    
+    <tr>
+        <td id="1">1</td>
+        <td id="1">1</td>
+        <td id="1">1</td>
+        <td id="1">1</td>
+        <td id="1">1</td>
+        <td id="1">1</td>
+        <td id="1">1</td>
+    </tr>
+    
+    <tr>
+        <td id="1">1</td>
+        <td id="1">1</td>
+        <td id="1">1</td>
+        <td id="1">1</td>
+        <td id="1">1</td>
+        <td id="1">1</td>
+        <td id="1">1</td>
+    </tr>
+    
+    <tr>
+        <td id="1">1</td>
+        <td id="1">1</td>
+        <td id="1">1</td>
+        <td id="1">1</td>
+        <td id="1">20</td>
+        <td id="1">21</td>
+        <td id="1">22</td>
+    </tr>
+    
+    <tr>
+        <td id="1">23</td>
+        <td id="1">24</td>
+        <td id="1">25</td>
+        <td id="1">1</td>
+        <td id="1">1</td>
+        <td id="1">1</td>
+        <td id="1">1</td>
+    </tr>
+    
+</table>
+
+<script>
+    let data = "x";
+    document.getElementById("month").innerHTML = data.month;
+    data.day
+    data.dayOfTheWeek
+</script>
+
+</body>
 </html>
-
-<div class="month">
-  <ul>
-    <li class="prev">&#10094;</li>
-    <li class="next">&#10095;</li>
-    <li>August<br /><span style="font-size:18px">2021</span></li>
-  </ul>
-</div>
-
-<ul class="weekdays">
-  <li>Mo</li>
-  <li>Tu</li>
-  <li>We</li>
-  <li>Th</li>
-  <li>Fr</li>
-  <li>Sa</li>
-  <li>Su</li>
-</ul>
-
-<ul class="days">
-  <li>1</li>
-  <li>2</li>
-  <li>3</li>
-  <li>4</li>
-  <li>5</li>
-  <li>6</li>
-  <li>7</li>
-  <li>8</li>
-  <li>9</li>
-  <li><span class="active">10</span></li>
-  <li>11</li>
-  ...etc
-</ul>
-</div>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
