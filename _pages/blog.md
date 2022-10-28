@@ -1,4 +1,10 @@
 ---
+layout: page
+title: Blog
+permalink: /blog/
+---
+
+---
 toc: true
 layout: post
 description: Here is a blog that shows what our group has accomplished every day that we work on our project! This will be updated daily as we make more progress on our calendar.
@@ -16,6 +22,4 @@ Our team was discussing about how we should go about creating the calendar in HT
 The Scrum Master (Emaad) found out that in order for us to build our calendar, we need to make an html file with all of the JavaScript/HTML in it and use the include command in order to display it on the actual markdown file. This worked out great, as we now have a calendar for the month of November and can begin the process of customizing it and implementing the API into it. At the moment, we are trying to figure out how we can make the numbers on the calendar appear on the top right of each cell, as this way, there will be space for all of the events that the user inputs. On this day, we collaborated with another group, Steven's group where we collaborated on this problem, but still were not able to figure it out.
 
 # 10/27 (Thursday)
-Today, we were trying to figure out how we were supposed to implement our API into our calendar. We made several issues regarding this topic and crossed over with other groups for assistance. While we are still trying to work on the code for our calendar API, we definitely have a better idea on how we can go about incorporating it into our final project. Tomorrow we plan on actually getting the API connected to our backend Flask application.
-
-# 10/28 (Friday)
+Today was a day where we made some issues and we also tried to make the calendar a little better. A problem that we tried to fix was make the API code on the backend. We wanted help from the teacher but we did not really get the chance because Mr. Mortensen was busy helping other groups.
