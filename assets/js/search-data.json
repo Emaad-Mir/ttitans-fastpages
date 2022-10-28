@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Calendar Final Project",
-            "content": "Welcome to Our Calendar . Below is a calendar (made from html!) that allows you (the user) to add any special events or activities for the month of November! We will be updating our product in the future so that you can include any important events for the entire year! . Online HTML Editor . November . Sunday Monday Tuesday Wednesday Thursday Friday Saturday . | | 1 | 2 | 3 | 4 | 5 | . 6 | 7 | 8 | 9 | 10 | 11 | 12 | . 13 | 14 | 15 | 16 | 17 | 18 | 19 | . 20 | 21 | 22 | 23 | 24 | 25 | 26 | . 27 | 28 | 29 | 30 | | | | . .",
+            "content": "Welcome to Our Calendar . Below is a calendar (made from html!) that allows you (the user) to add any special events or activities for the month of November! We will be updating our product in the future so that you can include any important events for the entire year! . Online HTML Editor style&gt; table, th, td { border: 1px solid lightblue; border-collapse: collapse; } table { width: 70vw; height: 70vh; border: 2px solid rgba(255, 202, 10, 0.873); } td { text-align: left; vertical-align: top; } .width { column-width: 100px; } &lt;/style&gt; . November . Sunday Monday Tuesday Wednesday Thursday Friday Saturday . | | 1 | 2 | 3 | 4 | 5 | . 6 | 7 | 8 | 9 | 10 | 11 | 12 | . 13 | 14 | 15 | 16 | 17 | 18 | 19 | . 20 | 21 | 22 | 23 | 24 | 25 | 26 | . 27 | 28 | 29 | 30 | | | | . .",
             "url": "https://emaad-mir.github.io/ttitans-fastpages/calendar",
             "relUrl": "/calendar",
             "date": " • Oct 25, 2022"
