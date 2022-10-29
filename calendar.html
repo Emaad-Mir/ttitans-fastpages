@@ -95,7 +95,6 @@ window.onload = wrap_img;
 <p>Below is a calendar (made from html!) that allows you (the user) to add any special events or activities for the month of November! We will be updating our product in the future so that you can include any important events for the entire year!</p>
 
 <html>
-<title>Online HTML Editor</title>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -151,56 +150,95 @@ window.onload = wrap_img;
     
     <tr>
     <div class="width">
-        <td id="1">6</td>
-        <td id="1">7</td>
-        <td id="1">8</td>
-        <td id="1">9</td>
-        <td id="1">10</td>
-        <td id="1">11</td>
-        <td id="1">12</td>
+        <td id="8">6</td>
+        <td id="9">7</td>
+        <td id="10">8</td>
+        <td id="11">9</td>
+        <td id="12">10</td>
+        <td id="13">11</td>
+        <td id="14">12</td>
     </div>
     </tr>
     
     <tr>
     <div class="width">
-        <td>13</td>
-        <td>14</td>
-        <td>15</td>
-        <td>16</td>
-        <td>17</td>
-        <td>18</td>
-        <td>19</td>
+        <td id="15">13</td>
+        <td id="16">14</td>
+        <td id="17">15</td>
+        <td id="18">16</td>
+        <td id="19">17</td>
+        <td id="20">18</td>
+        <td id="21">19</td>
     </div>
     </tr>
     
     <tr>
     <div class="width">
-        <td id="1">20</td>
-        <td id="1">21</td>
-        <td id="1">22</td>
-        <td id="1">23</td>
-        <td id="1">24</td>
-        <td id="1">25</td>
-        <td id="1">26</td>
+        <td id="22">20</td>
+        <td id="23">21</td>
+        <td id="24">22</td>
+        <td id="25">23</td>
+        <td id="26">24</td>
+        <td id="27">25</td>
+        <td id="28">26</td>
     </div>
     </tr>
     
     <tr>
     <div class="width">
-        <td id="1">27</td>
-        <td id="1">28</td>
-        <td id="1">29</td>
-        <td id="1">30</td>
-        <td id="1"></td>
-        <td id="1"></td>
-        <td id="1"></td>
+        <td id="29">27</td>
+        <td id="30">28</td>
+        <td id="31">29</td>
+        <td id="32">30</td>
+        <td id="33"></td>
+        <td id="34"></td>
+        <td id="35"></td>
     </div>
     </tr>
     
 </table>
 
 <script>
-    
+
+// prepare fetch urls
+const url = "https://agenda.nighthawkcodescrums.gq/calendar-api/events";
+
+const options = {
+  method: 'GET', // *GET, POST, PUT, DELETE, etc.
+  mode: 'cors', // no-cors, *cors, same-origin
+  cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
+  credentials: 'omit', // include, *same-origin, omit
+  headers: {
+    'Content-Type': 'application/json'
+    // 'Content-Type': 'application/x-www-form-urlencoded',
+  },
+};
+
+// prepare fetch PUT options, clones with JS Spread Operator (...)
+const put_options = {...options, method: 'PUT'}; // clones and replaces method
+
+// fetch the API
+fetch(url, options)
+  // response is a RESTful "promise" on any successful fetch
+  .then(response => {
+    // check for response errors
+    if (response.status !== 200) {
+        error('GET API response failure: ' + response.status);
+        return;
+    }
+    // valid response will have JSON data
+    response.json().then(data => {
+        for(const event of data){
+            document.getElementById(event.day+2).innerHTML = event.title
+        }
+    })
+})
+
+// catch fetch errors (ie Nginx ACCESS to server blocked)
+.catch(err => {
+  error(err + " " + url);
+});
+
 </script>
 
 </body>
