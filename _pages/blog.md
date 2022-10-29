@@ -1,15 +1,8 @@
 ---
+toc: true
 layout: page
 title: Blog
 permalink: /blog/
----
-
----
-toc: true
-layout: post
-description: Here is a blog that shows what our group has accomplished every day that we work on our project! This will be updated daily as we make more progress on our calendar.
-categories: [markdown]
-title: Team Log
 ---
 
 # 10/24 (Monday)
