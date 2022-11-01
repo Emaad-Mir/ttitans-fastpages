@@ -20,5 +20,8 @@ Today was a day where we made some issues and we also tried to make the calendar
 # 10/28 (Friday)
 Today we are going to get checked by Mr. Mortensen to see our commits and update him on our progress on our calendar project. We have gotten inspiration from calendy which Mr. Mortensen suggested us to take a look at. One of the problems that we had was the formatting on the tables width with the pixels because the word "Wednesday" is longer than the rest of the days in the week. The DevOps (Luka) will also make the changes to our docker-compose.yml in AWS so that it will restart our service when there was a patch or an update. Our Backend (Jishnu) will finish his javascript code so it is interactive. Our Scrum Master fixed our table because our formatting was not even across the days. He will also help our backend and frontend with their roles. Our frontend (Edwin) today will customize our fastpage so it fits our groups theme. 
 
-# 11/1 (Tuesday)
+# 10/29, 30, 31 (Saturday, Sunday, and Monday)
 Over the weekend, our scrum master (Emaad) was able to figure out how to add the API to the frontend and the backend and was able to input data onto the frontend table. Additionally, our Frontend Developer (Edwin) was able to figure out how to customize the home page a little bit with the background color and the scroll bar.
+
+# 11/1 (Tuesday)
+Today our frontend (Edwin) will try to fix the button positioning on our calendar to add things to the calendar. Our ScrumMaster (Emaad) will work on fixing the button functions that add things to the calendar. Our backend (Jishnu) will try to add the data to the calendar for the holidays. The DevOps (Luka) will help the backend implement data into the calendar and blog about what we do on that day. 
