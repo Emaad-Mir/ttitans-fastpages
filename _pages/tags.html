@@ -1,36 +1,142 @@
 ---
-layout: categories
-permalink: /categories/
-title: Tags
+permalink: /about/
+title: About Ttitans
 search_exclude: true
 ---
-
-{% if site.categories.size > 0 %}
-<h2>Contents</h2>
-
-  {% assign categories = "" | split:"" %}
-  {% for c in site.categories %}
-    {% assign categories = categories | push: c[0] %}
-  {% endfor %}
-  {% assign categories = categories | sort_natural %}
-
-  <ul>
-  {% for category in categories %}
-    <li><a href="#{{ category }}">{{ category }}</a></li>
-  {% endfor %}
-  </ul>
-
-  {% for category in categories %}
-      <h3 id ="{{ category }}"><i class="fas fa-tags category-tags-icon"></i></i> {{ category }}</h3>
-      <a name="{{ category | slugize }}"></a>
-      {% for post in site.categories[category] %}
-        {% if post.hide != true %}
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <article class="archive-item">
-          <p class="post-meta post-meta-title"><a class="page-meta" href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a>  • {{ post.date | date: date_format }}</p>
-        </article>
-        {% endif %}
-      {% endfor %}
-  {% endfor %}
-
-{% endif %}
+<style>
+  body {
+    background: #fee3c3;
+  }
+  .paddingleft {
+    float: left;
+    width: 5%;
+    height: 1500px;
+    color: rgb(220, 202, 152);
+    background-color: #fee3c3;
+  }
+  .paddingmid {
+    float: left;
+    width: 10%;
+    height: 1500px;
+    color: rgb(220, 202, 152);
+    border: 5px solid black;
+    background-color: #fee3c3;
+  }
+  .leftcolumn {
+    float: left;
+    width: 45%;
+    height: 3000px
+    color: black;
+    border: 5px solid black;
+    background-color: rgb(235, 137, 119);
+    border-radius: 10px;
+  }
+  .blend-text {
+    color: black;
+    text-align: center;
+  }
+  .black-text {
+    color: black;
+    text-align: center;
+  }
+  .member-title {
+    margin-top: 20px;
+    float: left;
+    width: 30%;
+    background-color: rgb(225, 255, 255);
+    border: 2px solid gray;
+    border-radius: 10px;
+  }
+  .member-blocks {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin-top: 20px;
+    float: left;
+    width: 30%;
+    background-color: #fdf9f6;
+  }
+  .member-image {
+    background-color: blueviolet;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    float: left;
+  }
+  .member-head {
+    top: 0;
+    width: 60%;
+    float: left;
+    margin: 10px;
+    display: inline;
+  }
+  .member-description {
+    display: block;
+    margin: 10px;
+    width: 30%
+  }
+  .activities {
+    display: block;
+    margin: 10px;
+    width: 100%;
+  }
+  .button {
+    margin: 0 auto;
+    border: none;
+    color: goldenrod;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  .button:hover {
+    background-color: #000000;
+    color: white;
+  }
+</style>
+<html>
+  <div class="aboutbackground"></div>
+    <div class="leftcolumn">
+        <h1 class="black-text">About Team Ttitans</h1>
+        <p class="black-text">We are Team Ttitans</p>
+        <p class="black-text">Members: Edwin Abraham, Emaad Mir, Jishnu Singiresu, and Luka Van Den Boomen</p>
+        <p class="black-text">Scrum Master: Emaad Mir</p>
+        <p class="black-text">Development Operations: Luka Van Den Boomen</p>
+        <p class="black-text">Frontend Developer: Edwin Abraham</p>
+        <p class="black-text">Backend Developer: Jishnu Singiresu</p>
+        <img src="beastboy.png"  width="320px" height="320px">
+    </div>
+    <div class="member-blocks">
+        <img class="member-image" src="/ttitans-fastpages/images/robin.png">
+            <h3 class="member-head">Scrum Master: Emaad</h3>
+                <p class="member-description">DNHS Sophomore</p>
+                <p class="activities">Enjoys not Chem</p>
+                <button class="button"><a href="https://emaad-mir.github.io/emaad-fastpages/">Fastpages</a></button>
+    </div>
+    <div class="member-blocks">
+        <img class="member-image" src="/ttitans-fastpages/images/cyborg.png">
+            <h3 class="member-head">Frontend: Edwin</h3>
+                <p class="member-description">DNHS Junior</p>
+                <p class="activities">Enjoys Biking</p>
+                <button class="button"><a href="https://edwinkuttappi.github.io/fastpage1/">Fastpages</a></button>
+    </div>
+    <div class="member-blocks">
+        <img class="member-image" src="/ttitans-fastpages/images/beastboy.png">
+            <h3 class="member-head">DevOps: Luka</h3>
+                <p class="member-description">DNHS Junior</p>
+                <p class="activities">Enjoys Soccer</p>
+                <button class="button"><a href="https://jishnus420.github.io/CSP-tri1/">Fastpages</a></button>
+    </div>
+    <div class="member-blocks">
+        <img class="member-image" src="/ttitans-fastpages/images/starfire.png">
+            <h3 class="member-head">Backend: Jishnu</h3>
+                <p class="member-description">DNHS Sophomore</p>
+                <p class="activities">Enjoys NASA</p>
+                <button class="button"><a href="https://lukavdb.github.io/Project-1/">Fastpages</a></button>
+    </div>
+</html>
