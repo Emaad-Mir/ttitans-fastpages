@@ -98,23 +98,38 @@ window.onload = wrap_img;
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <style>
-    table, th, td {
-      border: 1px solid lightblue;
-      border-collapse: collapse;
-    }
-    table {
-        width: 70vw;
-        height: 70vh;
-        border: 2px solid rgba(255, 202, 10, 0.873);
-    }
-    td {
-        text-align: left;
-        vertical-align: top;
-    }
-    .width {
-        column-width: 100px;
-    }
+<style>
+  table, th, td {
+    border: 1px solid lightblue;
+    border-collapse: collapse;
+  }
+  table {
+      width: 70vw;
+      height: 70vh;
+      border: 2px solid rgba(255, 202, 10, 0.873);
+  }
+  td {
+      text-align: left;
+      vertical-align: top;
+  }
+  .width {
+      column-width: 100px;
+  }
+  .month {
+    background-color: rgb(245, 206, 143);
+    border: 5px double orange;
+    width: 25%
+  }
+  .day {
+    background-color: rgb(119, 210, 246);
+    border: 5px double blue;
+    width: 25%;
+  }
+  .event {
+    background-color: rgb(110, 226, 110);
+    border: 5px double green;
+    width: 25%
+  }
 </style>
     
 </head>
@@ -298,10 +313,11 @@ window.onload = wrap_img;
     
 </table>
 
-<form autocomplete="off" id="form" methods="POST" action="https://agenda.nighthawkcodescrums.gq/calendar-api/events/add">
-    <input type="text" name="month" placeholder="Month" required="" />
-    <input type="text" name="day" placeholder="Day" required="" />
-    <input type="text" name="title" placeholder="Event" required="" />
+<form id="form" methods="POST" action="https://agenda.nighthawkcodescrums.gq/calendar-api/events/add">
+
+    <input class="month" type="text" name="month" placeholder="Month" required="" />
+    <input class="day" type="text" name="day" placeholder="Day" required="" />
+    <input class="event" type="text" name="title" placeholder="Event" required="" />
     <input type="submit" value="Add An Event" />
 </form>
 
@@ -350,6 +366,13 @@ fetch(url, options)
 
 </body>
 </html>
+
+<p><br />
+<br />
+<br />
+<br /></p>
+
+<h1 id="please-feel-free-to-give-us-feedback-from-the-comment-section">Please Feel Free to give us Feedback from the Comment Section!</h1>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
