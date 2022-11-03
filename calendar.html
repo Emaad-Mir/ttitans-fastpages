@@ -298,18 +298,10 @@ window.onload = wrap_img;
     
 </table>
 
-<h1>Add Your Event Here!</h1>
-
-<form id="form" method="POST" action="https://agenda.nighthawkcodescrums.gq/calendar-api/events/add">
-    <h3>Month</h3>
-    <input type="text" name="month" required="" />
-
-    <h3>Day</h3>
-    <input type="text" name="day" required="" />
-
-    <h3>Name of Event</h3>
-    <input type="text" name="title" required="" />
-
+<form id="form" methods="POST" action="https://agenda.nighthawkcodescrums.gq/calendar-api/events/add">
+    <input type="text" name="month" placeholder="Month" required="" />
+    <input type="text" name="day" placeholder="Day" required="" />
+    <input type="text" name="title" placeholder="Event" required="" />
     <input type="submit" value="Add An Event" />
     
 </form>
