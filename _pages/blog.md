@@ -36,4 +36,4 @@ Today we are making our final changes for the design of our site, blog and the i
 During night at the museum, we had presented to a other students and parents. They were overall very positive about the site we created because all of teh inputs put into the code would stay and show up on other computers that are not connected together. 
 
 # 11/4 (Friday)
-Today our group will work on the college board quizzes and create the our person blogs about the night at the museum and our experiences there. 
+Today our group will work on the college board quizzes and create the our person blogs about the night at the museum and our experiences there. We will also review our stuff that we made and reflect on our process of creating the site and its calendar that uses inputs in the frontend to add it to the calendar. 
