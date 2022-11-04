@@ -29,5 +29,11 @@ Today our frontend (Edwin) will try to fix the button positioning on our calenda
 # 11/2 (Wednesday)
 So today, we decided to focus on refining our project and brainstormed some ways to make our project much more interactive for the people that will be coming to look at us present tomorrow at the Night at the Museum. Originally to make up for this, we wanted to make a feature that enables the user to input their specific event and the description for it and the date with the start and end event but Mr. Mortensen told us that it is a lot more complex than what he expects us to do so far so we scratched that idea and added it to possible upgrades in the future. We also added more events to the API.
 
-# 11/3 (Thursday)
+# 11/3 (Thursday) before Night At the Museum
 Today we are making our final changes for the design of our site, blog and the information about all of us. Later tonight we will also be attending Night At the Museum to show our project to others that we are attending. 
+
+# 11/3 (Thursday) After Night At the Museum
+During night at the museum, we had presented to a other students and parents. They were overall very positive about the site we created because all of teh inputs put into the code would stay and show up on other computers that are not connected together. 
+
+# 11/4 (Friday)
+Today our group will work on the college board quizzes and create the our person blogs about the night at the museum and our experiences there. 
