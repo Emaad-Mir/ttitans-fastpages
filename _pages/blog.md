@@ -34,11 +34,12 @@ Today we are making our final changes for the design of our site, blog and the i
 
 # 11/3 (Thursday) After Night At the Museum
 During night at the museum, we had presented to a other students and parents. They were overall very positive about the site we created because all of teh inputs put into the code would stay and show up on other computers that are not connected together. 
-![]({{ site.baseurl }}/images/Braden3.jpg
+
+![]({{ site.baseurl }}/images/Braden3.jpg)
 Luka and Edwin Explaining the calendar to a student at the N@TM
 Photographer - Jishnu
 
-![]({{ site.baseurl }}/images/Emaad1.jpg
+![]({{ site.baseurl }}/images/Emaad1.jpg)
 Emaad explaining the calendar to another student at del norte
 Photographer - Jishnu
 
